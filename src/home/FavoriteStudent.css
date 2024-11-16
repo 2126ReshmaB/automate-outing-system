@@ -1,0 +1,69 @@
+/* Main container */
+.favorite-student-container {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading styling */
+.heading {
+  font-size: 1.8rem; /* Slightly smaller font size for balance */
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Counselor name with gradient */
+.counsellor-name {
+  background: linear-gradient(45deg, #e838bf, #4715bd, #609eee); /* Gradient mix of colors */
+  -webkit-background-clip: text; /* Ensure gradient applies to text */
+  color: transparent; /* Make text color transparent to reveal gradient */
+}
+
+/* Container for "No student found" message */
+.no-student-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #f3f3f3;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Trash icon styling */
+.trash-icon {
+  color: #E74C3C;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* "No student found" message styling */
+.no-student-message {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .no-student-container {
+    max-width: 90%;
+  }
+
+  .no-student-message {
+    font-size: 0.9rem;
+  }
+}

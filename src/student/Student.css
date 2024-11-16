@@ -1,0 +1,193 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6; /* Lighter background for a fresh look */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.student-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #4a4a4a; /* Softer text color */
+  border-radius: 12px; /* Slightly larger border-radius for smoothness */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer and larger shadow */
+}
+
+/* Heading Styling */
+.student-container h2 {
+  text-align: center;
+  color: #1a1a1b;
+  margin-bottom: 20px;
+  font-size: 28px; /* Larger font size */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  border-bottom: 2px solid #4c4d4e44;
+  padding-bottom: 10px;
+}
+
+/* Form Styling */
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add more spacing between form fields */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Increased space for better clarity */
+}
+
+label {
+  display: block;
+  font-size: 16px; /* Larger font for labels */
+  margin-bottom: 8px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+label::after {
+  content: " *";
+  color: red;
+}
+
+input[type="text"], input[type="date"], select {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px; /* More rounded edges */
+  background-color: #f1f1f1; /* Lighter background color for inputs */
+  color: #333;
+  font-size: 16px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for inputs */
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+  border-color: #4c9f70;
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 159, 112, 0.6); /* Green glow effect */
+}
+
+/* Error and Success Message Styling */
+.error {
+  color: #fff;
+  background-color: #f44336; /* Red for errors */
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.success {
+  color: #fff;
+  background-color: #4caf50; /* Green for success */
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Submit Button Styling */
+.submit-button {
+  padding: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Rounded button */
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  transform: scale(1); /* Active state: avoid overshoot on click */
+}
+
+/* Logout Button Styling */
+.logout-button {
+  background-color: #ff4c4c;
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e03a3a;
+  transform: scale(1.05);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+  .student-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .logout-button {
+    width: 100%;
+  }
+}
+
+/* Timeline Styling */
+.status-timeline {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.status-timeline h3 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.status-step {
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border-left: 4px solid #ccc;
+  background-color: #e8e8e8;
+  border-radius: 6px;
+  color: #555;
+  transition: 0.3s;
+}
+
+.status-step.completed {
+  border-left-color: #4caf50;
+  color: #4caf50;
+}
+
+.status-step.rejection {
+  border-left-color: #f44336;
+  color: #f44336;
+  font-weight: bold;
+}

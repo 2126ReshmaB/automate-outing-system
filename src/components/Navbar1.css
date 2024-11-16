@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Light purple background */
+  padding: 15px 30px; /* Increased padding for a more spacious look */
+  color: #ffffff; /* White text */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.178); /* Subtle shadow */
+  border-radius: 5px;
+}
+
+.navbar-logo h2 {
+  margin: 0;
+  font-size: 20px; /* Larger font size */
+  font-weight: bold;
+  color: #0044cc; /* Deep blue color */
+  background: linear-gradient(90deg, #0044cc, #402ac0); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; 
+  
+  /* 3D effect with shadow */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0px 0px 10px rgba(0, 68, 204, 0.326);
+  
+  margin-left: 15px;
+  letter-spacing: 2px; /* Spaced out letters for a more stylized look */
+  text-transform: uppercase; /* All caps for a bold, eye-catching style */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Increased gap between links */
+  margin: 0;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #a1bcfc; /* Link color */
+  font-size: 18px; /* Link font size */
+  transition: color 0.3s, transform 0.3s; /* Added transform for a scale effect */
+}
+
+.navbar-links a:hover {
+  color: #ffffff; /* Change link color on hover */
+  text-decoration: underline; /* Underline effect */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
